@@ -1,0 +1,79 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (1.9.0)
+    authbind (0.1.6)
+      cutlery (>= 0.0.0)
+    aws (0.100.6)
+    build-essential (1.3.4)
+    chef_handler (1.1.4)
+    cutlery (0.1.0)
+    database (1.3.12)
+      aws (>= 0.0.0)
+      mysql (>= 1.3.0)
+      postgresql (>= 1.0.0)
+      xfs (>= 0.0.0)
+    glassfish (0.5.22)
+      authbind (>= 0.0.0)
+      cutlery (~> 0.1)
+      java (>= 0.0.0)
+    imagemagick (0.2.2)
+    java (1.10.0)
+      windows (>= 0.0.0)
+    mysql (2.1.2)
+      build-essential (>= 0.0.0)
+      openssl (>= 0.0.0)
+    nginx (1.4.0)
+      apt (>= 0.0.0)
+      build-essential (>= 0.0.0)
+      ohai (>= 1.1.4)
+      yum (>= 0.0.0)
+    ohai (1.1.8)
+    openssl (1.0.2)
+    postgresql (2.2.2)
+      openssl (>= 0.0.0)
+    swftools (0.2.4)
+      apt (>= 0.0.0)
+    tomcat (0.12.0)
+      java (>= 0.0.0)
+    windows (1.8.4)
+      chef_handler (>= 0.0.0)
+    xfs (1.1.0)
+    yum (2.2.0)
+
+GIT
+  remote: git://github.com/iamedu/chef-oracle-xe.git
+  ref: master
+  sha: 2096a6db88f5d78d7d134ac06c589e9db7e147eb
+  specs:
+    oracle-xe (0.1.1)
+
+GIT
+  remote: git://github.com/jasherai/chef-alfresco.git
+  ref: master
+  sha: 3e4c3e12ed37bf06eae7cc9b4cc4918d86b4d553
+  specs:
+    alfresco (0.1.1)
+      database (>= 0.0.0)
+      imagemagick (>= 0.0.0)
+      java (>= 0.0.0)
+      mysql (>= 0.0.0)
+      nginx (>= 0.0.0)
+      openoffice (>= 0.0.0)
+      swftools (>= 0.0.0)
+      tomcat (>= 0.0.0)
+
+GIT
+  remote: git://github.com/rgauss/chef-openoffice.git
+  ref: master
+  sha: 30f06ab65ab7977a742ad7e941714961f8eec691
+  specs:
+    openoffice (0.2.3)
+      java (>= 0.0.0)
+
+DEPENDENCIES
+  alfresco (>= 0)
+  glassfish (>= 0)
+  openoffice (>= 0)
+  oracle-xe (>= 0)
+
